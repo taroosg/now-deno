@@ -1,24 +1,8 @@
 {
   "version": 2,
   "functions": {
-    "index.ts": {
+    "api/**/*.[jt]s": {
       "runtime": "vercel-deno@0.3.2"
     }
-  },
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/index.ts",
-      "methods": [
-        "GET"
-      ]
-    },
-    {
-      "src": "/users",
-      "dest": "/index.ts",
-      "methods": [
-        "GET"
-      ]
-    }
-  ]
+  }
 }
