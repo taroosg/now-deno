@@ -8,7 +8,7 @@ import {
   createPost,
   deletePost,
   updatePost,
-} from "./controllers/postsController.ts";
+} from "./controllers/postController.ts";
 
 export const routes = () => {
   const router = createRouter();
