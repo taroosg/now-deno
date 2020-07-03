@@ -3,13 +3,13 @@ import { createApp } from "https://servestjs.org/@v1.1.0/mod.ts";
 
 // req.respond({ body: `Hell Wird!` });
 const app = createApp();
-app.get("/", async (req) => {
+app.get("/", async (req: ServerRequest) => {
   await req.respond({
     status: 200,
     body: "Hell Word",
   });
 });
-app.get("/hoge", async (req) => {
+app.get("/hoge", async (req: ServerRequest) => {
   await req.respond({
     status: 200,
     body: "hogehoge",
