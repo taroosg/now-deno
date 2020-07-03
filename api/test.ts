@@ -10,5 +10,11 @@ export default async (req: ServerRequest) => {
       body: "Hell Word",
     });
   });
+  app.get("/hoge", async (req) => {
+    await req.respond({
+      status: 200,
+      body: "hogehoge",
+    });
+  });
   app.listen({ port: 8000 });
 };
